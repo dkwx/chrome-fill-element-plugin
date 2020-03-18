@@ -11,7 +11,6 @@
             }
             var data = JSON.parse(value);
             if (data !== null) {
-                debugger
                 if (data.expire != null && data.expire < new Date().getTime()) {
                     localStorage.removeItem(key);
                 } else {
