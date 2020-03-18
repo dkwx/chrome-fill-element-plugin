@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "代凯的插件",
+	"version": "1.0",
+	"description": "方便将某个元素复制到界面",
+	"author": "kai.dai",
+	"icons":
+	{
+		"16": "icon_16.png",
+		"48": "icon_48.png",
+		"128": "icon_128.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon_128.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://dubai.corp.qunar.com/*"],
+			"js": ["content-script.js"]
+		}
+	],
+	"web_accessible_resources": 
+	[
+		"inject.js"
+	]
+}
