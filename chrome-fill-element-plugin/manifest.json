@@ -18,7 +18,7 @@
 	"content_scripts": 
 	[
 		{
-			"matches": ["*://dubai.corp.qunar.com/*"],
+			"matches": ["http://*/*"],
 			"js": ["content-script.js"]
 		}
 	],
